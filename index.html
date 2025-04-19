@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Козацька Слобода</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .menu-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #c82333;
+            margin-bottom: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: #755A57;
+            margin-bottom: 30px;
+        }
+        
+        .menu-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+            cursor: pointer;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .item-name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #222;
+            transition: all 0.3s ease;
+            padding: 8px 0;
+        }
+        
+        .item-name:hover {
+            color: #e53541;
+            transform: translateX(5px);
+        }
+        
+        .item-description {
+            font-size: 14px;
+            color: #666;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, margin 0.3s ease;
+            margin: 0;
+        }
+        
+        .menu-item.active .item-description {
+            max-height: 100px;
+            margin: 8px 0;
+        }
+        
+        .item-price {
+            color: #c82333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .special {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Козацька Слобода</h1>
+        <h2>🍽️ Наше меню</h2>
+        
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Цезар з куркою</div>
+                <div class="item-price">250₴</div>
+            </div>
+            <div class="item-description">Листя салата, куряче філе, помідор чері, сухарики, соус Цезар</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Весняний</div>
+                <div class="item-price">75₴</div>
+            </div>
+            <div class="item-description">Капуста, огірок</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Олів'є</div>
+                <div class="item-price">110₴</div>
+            </div>
+            <div class="item-description">Картопля, морква, огірок, горох, яйце, шинка, цибуля, майонез</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Салат з баклажаном і фєтою</div>
+                <div class="item-price">300₴</div>
+            </div>
+            <div class="item-description">Лист салата, помідор чері, фєта, смажений баклажан, заправка</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Борщ Фірмовий</div>
+                <div class="item-price">130₴</div>
+            </div>
+            <div class="item-description">з м'ясом та сметаною</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Бульйон домашній</div>
+                <div class="item-price">110₴</div>
+            </div>
+            <div class="item-description">Домашня локшина, філе куряче, перепелине яйце</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">М'ясна солянка</div>
+                <div class="item-price">150₴</div>
+            </div>
+            <div class="item-description">Копченості, огірок маринований, лимон, оливка</div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Млинці з сиром</div>
+                <div class="item-price">100₴</div>
+            </div>
+            <div class="item-description"></div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Млинці з м'ясом</div>
+                <div class="item-price">120₴</div>
+            </div>
+            <div class="item-description"></div>
+        </div>
+
+        <div class="menu-item" onclick="this.classList.toggle('active')">
+            <div class="item-header">
+                <div class="item-name">Намазка сала з грінками</div>
+                <div class="item-price">180₴</div>
+            </div>
+            <div class="item-description">Мелене сало, хліб, мариновані огірки, цибуля, майонезний соус</div>
+        </div>
+    </div>
+</body>
+</html>
